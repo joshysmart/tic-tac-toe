@@ -1,0 +1,76 @@
+ @import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
+
+ * {
+  box-sizing: border-box;
+ }
+
+ body {
+  background: #eb7676;
+  background-attachment: fixed;
+  color: white;
+ }
+
+ .wrapper h1 {
+  font-size: 3em;
+  font-family: Courier, monospace;
+ }
+
+ .selection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+ .selection select {
+  font-size: 1em;
+  font-family: Courier, monospace;
+  padding: 5px;
+  margin: 5px;
+ }
+
+ .selection button {
+  font-size: 1em;
+  font-family: Courier, monospace;
+  padding: 5px;
+  margin: 5px;
+ }
+
+ .wrapper button {
+  font-size: 1em;
+  font-family: Courier, monospace;
+  padding: 5px;
+  margin: 5px;
+ }
+
+ .container {
+  width: 30rem;
+  height: 30rem;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+ }
+
+ .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-right: 5px solid #fff;
+  border-bottom: 5px solid #fff;
+  font-size: 3em;
+  font-weight: bold;
+  font-family: 'Mansalva', cursive;
+ }
+
+ .end {
+  font-size: 2em;
+  font-family: Courier, monospace;
+  font-weight: bold;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+ }
