@@ -64,7 +64,7 @@ const game = (() => {
  }
 
  function startAI(e) {
-  if (typeof gameBoard[e.target.dataset.box] !== 'number') return
+  if (typeof gameBoard[e.target.dataset.box] !== 'number' || !lockBoard) return
   playerTurn(e.target.dataset.box, player1.marker); 
   if (!checkTie() && !checkWin(gameBoard, player1.marker)) setTimeout(() => {
    playerTurn(randMove(), player2.marker);
